@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+    padding: 20px 0;
+    width: 40%;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    text-align: center;
+}
+.balance{
+    margin-top: 30px;
+    line-height: 35px;
+}
+.IncomeExpense{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+}
+.IncomeExpense .border{
+    height: 60px;
+    width: 2px;
+    background-color: #eee;
+}
+.IncomeExpense .income h4,
+.expense h4{
+    color: green;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.expense h4{
+    color: red;
+}
+.HistoryList{
+    margin-top: 20px;
+}
+.HistoryList .hitory{
+    padding-bottom: 5px;
+}
+.HistoryList ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-right: 5px solid green;
+}
+.HistoryList ul li.border-red{
+    border-right: 5px solid red;
+}
+.HistoryList ul li.border-green{
+    border-right: 5px solid green;
+}
+.HistoryList ul li .btn-remove{
+    padding: 5px 10px;
+    color: white;
+    background-color: red;
+    border: 0;
+}
+.AddTransaction{
+    margin-top: 20px;
+}
+.AddTransaction h3{
+    padding-bottom: 5px;
+}
+.AddTransaction form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.AddTransaction form .text{
+    margin-top: 15px;
+}
+.AddTransaction form input{
+    padding: 8px;
+    border: 1px solid grey;
+    outline: 0;
+    margin: 5px 0 10px 0;
+}
+.AddTransaction form button{
+    padding: 8px;
+    border: 0;   
+    background-color: rgba(98, 0, 255, 0.517);
+    color: white;
+    outline: 0;
+    margin: 5px 0 10px 0;
+}
